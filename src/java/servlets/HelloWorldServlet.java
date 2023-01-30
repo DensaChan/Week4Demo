@@ -35,6 +35,7 @@ public class HelloWorldServlet extends HttpServlet {
             request.setAttribute("lastname", lastname);
             
             // set an attribute for a message
+            request.setAttribute("invalid", true);
             request.setAttribute("message", "Invalid entry. Please enter both your first and last names.");
             
             // forward the request and response objects to the JSP
